@@ -185,6 +185,8 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
             points[(x + v) % n][y].type = 1;
             points[x][y].moved = true;
             points[(x + v) % n][y].moved = true;
+            points[x][y].velocity = 0;
+            points[(x + v) % n][y].velocity = v;
         }
     }
 
